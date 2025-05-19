@@ -1,6 +1,6 @@
 <h1><%= @place["name"] %></h1>
 
-<h3>Journal Entries</h3>
+<h3>Entries for this place </h3>
 
 <ul>
 <% for entry in @entries%>
@@ -8,6 +8,7 @@
   <li><%= entry["occurred_on"] %></li>
    <li><%= entry["description"] %></li>
   <%end%>
+  
 </ul>
 
 <p>
@@ -15,5 +16,5 @@
 </p>
 
 <p>
-  <a href="/places">Back to All Places</a>
+  <a href="/places">Back to All</a>
 </p>
