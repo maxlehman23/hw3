@@ -2,14 +2,14 @@
 
 <h3>Entries</h3>
 
-<ul>
-<% for entry in @entries%>
-  <li><%= entry["title"]%></li>
-  <li><%= entry["occurred_on"] %></li>
-   <li><%= entry["description"] %></li>
-  <%end%>
-</ul>
 
+<% for entry in @entries%>
+  <h3><%= entry["title"]%></h3>
+ <ul>
+   <li><%= entry["occurred_on"] %></li>
+   <li><%= entry["description"] %></li>
+  </ul>
+<%end%>
 <p>
   <a href="/entries/new?place_id=<%= @place["id"] %>">New  Entry</a>
 </p>
